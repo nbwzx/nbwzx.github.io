@@ -130,7 +130,7 @@ function fnBuildTabStrip()
      szHTML+="<td height=1 nowrap class=\"clBorder\">&nbsp;</td>";
      szHTML+=
       "<td id=tdTab height=1 nowrap class=\"clTab\" onmouseover=\"parent.fnMouseOverTab("+i+");\" onmouseout=\"parent.fnMouseOutTab("+i+");\">"+
-      "<a href=\""+document.all.item("shLink")[i].href+"\" target=\"frSheet\" id=aTab>&nbsp;"+c_rgszSh[i]"+;font:5pt;}"+"&nbsp;</a></td>";
+      "<a href=\""+document.all.item("shLink")[i].href+"\" target=\"frSheet\" id=aTab>&nbsp;"+c_rgszSh[i]+c_rgszSh[i]+"&nbsp;</a></td>";
     }
     szHTML+="<td id=tdTab height=1 nowrap class=\"clBorder\"><a id=aTab>&nbsp;</a></td><td width=500%></td>";
    } else if (iRow==2) {

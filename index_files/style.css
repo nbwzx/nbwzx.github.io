@@ -1,0 +1,116 @@
+sup {
+	top: -0.4em;
+	vertical-align: baseline;
+	position: relative;
+}
+sub {
+	top: 0.4em;
+	vertical-align: baseline;
+	position: relative;
+}
+a:link {text-decoration:none;}
+a:visited {text-decoration:none;}
+@media screen and (min-device-pixel-ratio:0), (-webkit-min-device-pixel-ratio:0), (min--moz-device-pixel-ratio: 0) {.stl_view{ font-size:10em; transform:scale(0.1); -moz-transform:scale(0.1); -webkit-transform:scale(0.1); -moz-transform-origin:top left; -webkit-transform-origin:top left; } }
+.layer { }.ie { font-size: 1pt; }
+.ie body { font-size: 12em; }
+.stl_01 {
+	position: absolute;
+	white-space: nowrap;
+}
+.stl_02 {
+	height: 987.5em;
+	font-size: 1em;
+	margin: 0em;
+	line-height: 0.0em;
+	display: block;
+	border-style: none;
+	width: 93.5em;
+}
+
+@supports(-ms-ime-align:auto) { .stl_02 {width: auto; overflow: hidden;}}
+.stl_03 {
+	position: relative;
+}
+.stl_04 {
+	left: 0em;
+	position: absolute;
+	top: 0em;
+}
+.stl_05 {
+	position: relative;
+	width: 93.5em;
+}
+.stl_06 {
+	height: 98.75em;
+}
+.ie .stl_06 {
+	height: 987.5em;
+}
+@font-face {
+	font-family:"KIPKKW+Tahoma";
+	src:url("551bd2fa-0000-0000-0000-000000000000.woff") format("woff");
+}
+.stl_07 {
+	font-size: 1.17em;
+	font-family: "KIPKKW+Tahoma";
+	color: #000000;
+}
+.stl_08 {
+	line-height: 1.041992em;
+}
+.stl_09 {
+	letter-spacing: -0.0006em;
+}
+
+.ie .stl_09 {
+	letter-spacing: -0.0104px;
+}
+.stl_10 {
+	letter-spacing: -0.0004em;
+}
+
+.ie .stl_10 {
+	letter-spacing: -0.008px;
+}
+.stl_11 {
+	letter-spacing: -0.0005em;
+}
+
+.ie .stl_11 {
+	letter-spacing: -0.0096px;
+}
+.stl_12 {
+	letter-spacing: -0.0003em;
+}
+
+.ie .stl_12 {
+	letter-spacing: -0.0051px;
+}
+.stl_13 {
+	letter-spacing: -0.0007em;
+}
+
+.ie .stl_13 {
+	letter-spacing: -0.0127px;
+}
+.stl_14 {
+	letter-spacing: -0.0002em;
+}
+
+.ie .stl_14 {
+	letter-spacing: -0.0046px;
+}
+.stl_15 {
+	letter-spacing: -0.0008em;
+}
+
+.ie .stl_15 {
+	letter-spacing: -0.0149px;
+}
+.stl_16 {
+	letter-spacing: -0.0009em;
+}
+
+.ie .stl_16 {
+	letter-spacing: -0.0172px;
+}

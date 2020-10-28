@@ -46,6 +46,7 @@ function fnUpdateTabs()
  }
 }
 
+
 if (window.name!="frSheet")
  window.location.replace("../edge.html");
 else
@@ -54,6 +55,8 @@ else
 </script>
 <![endif]>
 </head>
+
+
 
 <body link="#0563C1" vlink="#954F72" class=xl67>
 
@@ -121,9 +124,10 @@ else
   <td class=xl95></td>
   <td class=xl95></td>
   <td class=xl96>　</td>
-  <td class=xl96 style='border-left:none'>E</td>
+  <td class=xl96 style='border-left:none'><input id="a12" class="xl96" style="width: 100%; height: 100%;border-bottom-width: 0pt;border-right-width: 0pt;border-top-width: 0px;border-left-width: 0px;" onkeyup="getsum()"></td>
   <td class=xl96 style='border-left:none'>　</td>
   <td class=xl67></td>
+  <td class=xl95></td>
   <td class=xl95></td>
   <td class=xl95></td>
   <td class=xl95></td>
@@ -138,9 +142,9 @@ else
   <td class=xl95></td>
   <td class=xl95></td>
   <td class=xl95></td>
-  <td class=xl96 style='border-top:none'>C</td>
+  <td class=xl96 style='border-top:none'><input id="a14" class="xl96" style="width: 100%; height: 100%;border-bottom-width: 0pt;border-right-width: 0pt;border-top-width: 0px;border-left-width: 0px;" onkeyup="getsum()"></td>
   <td class=xl96 style='border-top:none;border-left:none'>　</td>
-  <td class=xl96 style='border-top:none;border-left:none'>G</td>
+  <td class=xl96 style='border-top:none;border-left:none'><input id="a16" class="xl96" style="width: 100%; height: 100%;border-bottom-width: 0pt;border-right-width: 0pt;border-top-width: 0px;border-left-width: 0px;" onkeyup="getsum()"></td>
   <td class=xl67></td>
   <td class=xl95></td>
   <td class=xl95></td>
@@ -157,7 +161,7 @@ else
   <td class=xl95></td>
   <td class=xl95></td>
   <td class=xl96 style='border-top:none'>　</td>
-  <td class=xl96 style='border-top:none;border-left:none'>A</td>
+  <td class=xl96 style='border-top:none;border-left:none'><input id="a18" class="xl96" style="width: 100%; height: 100%;border-bottom-width: 0pt;border-right-width: 0pt;border-top-width: 0px;border-left-width: 0px;" onkeyup="getsum()"></td>
   <td class=xl96 style='border-top:none;border-left:none'>　</td>
   <td class=xl67></td>
   <td class=xl95></td>
@@ -172,16 +176,16 @@ else
   <td class=xl67></td>
   <td class=xl67></td>
   <td class=xl97>　</td>
-  <td class=xl97 style='border-left:none'>D</td>
+  <td class=xl97 style='border-left:none'><input id="a32" class="xl97" style="width: 100%; height: 100%;border-bottom-width: 0pt;border-right-width: 0pt;border-top-width: 0px;border-left-width: 0px;" onkeyup="getsum()"></td>
   <td class=xl97 style='border-left:none'>　</td>
   <td class=xl98 style='border-top:none;border-left:none'>　</td>
-  <td class=xl98 style='border-top:none;border-left:none'>B</td>
+  <td class=xl98 style='border-top:none;border-left:none'><input id="a52" class="xl98" style="width: 100%; height: 100%;border-bottom-width: 0pt;border-right-width: 0pt;border-top-width: 0px;border-left-width: 0px;" onkeyup="getsum()"></td>
   <td class=xl98 style='border-top:none;border-left:none'>　</td>
   <td class=xl99 style='border-left:none'>　</td>
-  <td class=xl99 style='border-left:none'>H</td>
+  <td class=xl99 style='border-left:none'><input id="a42" class="xl99" style="width: 100%; height: 100%;border-bottom-width: 0pt;border-right-width: 0pt;border-top-width: 0px;border-left-width: 0px;" onkeyup="getsum()"></td>
   <td class=xl99 style='border-left:none'>　</td>
   <td class=xl100 style='border-left:none'>　</td>
-  <td class=xl100 style='border-left:none'>F</td>
+  <td class=xl100 style='border-left:none'><input id="a62" class="xl100" style="width: 100%; height: 100%;border-bottom-width: 0pt;border-right-width: 0pt;border-top-width: 0px;border-left-width: 0px;" onkeyup="getsum()"></td>
   <td class=xl100 style='border-left:none'>　</td>
  </tr>
  <tr height=30 style='mso-height-source:userset;height:22.5pt'>
@@ -189,18 +193,18 @@ else
   <td class=xl67></td>
   <td class=xl67></td>
   <td class=xl67></td>
-  <td class=xl97 style='border-top:none'>X</td>
+  <td class=xl97 style='border-top:none'><input id="a34" class="xl97" style="width: 100%; height: 100%;border-bottom-width: 0pt;border-right-width: 0pt;border-top-width: 0px;border-left-width: 0px;" onkeyup="getsum()"></td>
   <td class=xl97 style='border-top:none;border-left:none'>　</td>
-  <td class=xl97 style='border-top:none;border-left:none'>T</td>
-  <td class=xl98 style='border-top:none;border-left:none'>S</td>
+  <td class=xl97 style='border-top:none;border-left:none'><input id="a36" class="xl97" style="width: 100%; height: 100%;border-bottom-width: 0pt;border-right-width: 0pt;border-top-width: 0px;border-left-width: 0px;" onkeyup="getsum()"></td>
+  <td class=xl98 style='border-top:none;border-left:none'><input id="a54" class="xl98" style="width: 100%; height: 100%;border-bottom-width: 0pt;border-right-width: 0pt;border-top-width: 0px;border-left-width: 0px;" onkeyup="getsum()"></td>
   <td class=xl98 style='border-top:none;border-left:none'>　</td>
-  <td class=xl98 style='border-top:none;border-left:none'>Q</td>
-  <td class=xl99 style='border-top:none;border-left:none'>R</td>
+  <td class=xl98 style='border-top:none;border-left:none'><input id="a56" class="xl98" style="width: 100%; height: 100%;border-bottom-width: 0pt;border-right-width: 0pt;border-top-width: 0px;border-left-width: 0px;" onkeyup="getsum()"></td>
+  <td class=xl99 style='border-top:none;border-left:none'><input id="a44" class="xl99" style="width: 100%; height: 100%;border-bottom-width: 0pt;border-right-width: 0pt;border-top-width: 0px;border-left-width: 0px;" onkeyup="getsum()"></td>
   <td class=xl99 style='border-top:none;border-left:none'>　</td>
-  <td class=xl99 style='border-top:none;border-left:none'>Z</td>
-  <td class=xl100 style='border-top:none;border-left:none'>Y</td>
+  <td class=xl99 style='border-top:none;border-left:none'><input id="a46" class="xl99" style="width: 100%; height: 100%;border-bottom-width: 0pt;border-right-width: 0pt;border-top-width: 0px;border-left-width: 0px;" onkeyup="getsum()"></td>
+  <td class=xl100 style='border-top:none;border-left:none'><input id="a64" class="xl100" style="width: 100%; height: 100%;border-bottom-width: 0pt;border-right-width: 0pt;border-top-width: 0px;border-left-width: 0px;" onkeyup="getsum()"></td>
   <td class=xl100 style='border-top:none;border-left:none'>　</td>
-  <td class=xl100 style='border-top:none;border-left:none'>W</td>
+  <td class=xl100 style='border-top:none;border-left:none'><input id="a66" class="xl100" style="width: 100%; height: 100%;border-bottom-width: 0pt;border-right-width: 0pt;border-top-width: 0px;border-left-width: 0px;" onkeyup="getsum()"></td>
  </tr>
  <tr height=30 style='mso-height-source:userset;height:22.5pt'>
   <td height=30 class=xl67 style='height:22.5pt'></td>
@@ -208,16 +212,16 @@ else
   <td class=xl67></td>
   <td class=xl67></td>
   <td class=xl97 style='border-top:none'>　</td>
-  <td class=xl97 style='border-top:none;border-left:none'>L</td>
+  <td class=xl97 style='border-top:none;border-left:none'><input id="a38" class="xl97" style="width: 100%; height: 100%;border-bottom-width: 0pt;border-right-width: 0pt;border-top-width: 0px;border-left-width: 0px;" onkeyup="getsum()"></td>
   <td class=xl97 style='border-top:none;border-left:none'>　</td>
   <td class=xl98 style='border-top:none;border-left:none'>　</td>
-  <td class=xl98 style='border-top:none;border-left:none'>J</td>
+  <td class=xl98 style='border-top:none;border-left:none'><input id="a58" class="xl98" style="width: 100%; height: 100%;border-bottom-width: 0pt;border-right-width: 0pt;border-top-width: 0px;border-left-width: 0px;" onkeyup="getsum()"></td>
   <td class=xl98 style='border-top:none;border-left:none'>　</td>
   <td class=xl99 style='border-top:none;border-left:none'>　</td>
-  <td class=xl99 style='border-top:none;border-left:none'>P</td>
+  <td class=xl99 style='border-top:none;border-left:none'><input id="a48" class="xl99" style="width: 100%; height: 100%;border-bottom-width: 0pt;border-right-width: 0pt;border-top-width: 0px;border-left-width: 0px;" onkeyup="getsum()"></td>
   <td class=xl99 style='border-top:none;border-left:none'>　</td>
   <td class=xl100 style='border-top:none;border-left:none'>　</td>
-  <td class=xl100 style='border-top:none;border-left:none'>N</td>
+  <td class=xl100 style='border-top:none;border-left:none'><input id="a68" class="xl100" style="width: 100%; height: 100%;border-bottom-width: 0pt;border-right-width: 0pt;border-top-width: 0px;border-left-width: 0px;" onkeyup="getsum()"></td>
   <td class=xl100 style='border-top:none;border-left:none'>　</td>
  </tr>
  <tr height=30 style='mso-height-source:userset;height:22.5pt'>
@@ -229,7 +233,7 @@ else
   <td class=xl67></td>
   <td class=xl67></td>
   <td class=xl101 style='border-top:none'>　</td>
-  <td class=xl101 style='border-top:none;border-left:none'>I</td>
+  <td class=xl101 style='border-top:none;border-left:none'><input id="a22" class="xl101" style="width: 100%; height: 100%;border-bottom-width: 0pt;border-right-width: 0pt;border-top-width: 0px;border-left-width: 0px;" onkeyup="getsum()"></td>
   <td class=xl101 style='border-top:none;border-left:none'>　</td>
   <td class=xl95></td>
   <td class=xl95></td>
@@ -246,9 +250,9 @@ else
   <td class=xl67></td>
   <td class=xl67></td>
   <td class=xl67></td>
-  <td class=xl101 style='border-top:none'>K</td>
+  <td class=xl101 style='border-top:none'><input id="a24" class="xl101" style="width: 100%; height: 100%;border-bottom-width: 0pt;border-right-width: 0pt;border-top-width: 0px;border-left-width: 0px;" onkeyup="getsum()"></td>
   <td class=xl101 style='border-top:none;border-left:none'>　</td>
-  <td class=xl101 style='border-top:none;border-left:none'>O</td>
+  <td class=xl101 style='border-top:none;border-left:none'><input id="a26" class="xl101" style="width: 100%; height: 100%;border-bottom-width: 0pt;border-right-width: 0pt;border-top-width: 0px;border-left-width: 0px;" onkeyup="getsum()"></td>
   <td class=xl67></td>
   <td class=xl67></td>
   <td class=xl67></td>
@@ -265,7 +269,7 @@ else
   <td class=xl67></td>
   <td class=xl67></td>
   <td class=xl101 style='border-top:none'>　</td>
-  <td class=xl101 style='border-top:none;border-left:none'>M</td>
+  <td class=xl101 style='border-top:none;border-left:none'><input id="a28" class="xl101" style="width: 100%; height: 100%;border-bottom-width: 0pt;border-right-width: 0pt;border-top-width: 0px;border-left-width: 0px;" onkeyup="getsum()"></td>
   <td class=xl101 style='border-top:none;border-left:none'>　</td>
   <td class=xl67></td>
   <td class=xl67></td>
@@ -350,6 +354,243 @@ else
  <![endif]>
 </table>
 
-</body>
 
+
+
+
+<script type="text/javascript">
+
+function setCookie(cname,cvalue,exdays) {
+  var d = new Date();
+  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  var expires = "expires=" + d.toGMTString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for(var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+
+function checkCookie() {
+if (byid("a12").value=="")
+byid("a12").value="E"
+if (byid("a14").value=="")
+byid("a14").value="C"
+if (byid("a16").value=="")
+byid("a16").value="G"
+if (byid("a18").value=="")
+byid("a18").value="A"
+
+if (byid("a22").value=="")
+byid("a22").value="I"
+if (byid("a24").value=="")
+byid("a24").value="K"
+if (byid("a26").value=="")
+byid("a26").value="O"
+if (byid("a28").value=="")
+byid("a28").value="M"
+
+if (byid("a32").value=="")
+byid("a32").value="D"
+if (byid("a34").value=="")
+byid("a34").value="X"
+if (byid("a36").value=="")
+byid("a36").value="T"
+if (byid("a38").value=="")
+byid("a38").value="L"
+
+if (byid("a42").value=="")
+byid("a42").value="H"
+if (byid("a44").value=="")
+byid("a44").value="R"
+if (byid("a46").value=="")
+byid("a46").value="Z"
+if (byid("a48").value=="")
+byid("a48").value="P"
+
+if (byid("a52").value=="")
+byid("a52").value="B"
+if (byid("a54").value=="")
+byid("a54").value="S"
+if (byid("a56").value=="")
+byid("a56").value="Q"
+if (byid("a58").value=="")
+byid("a58").value="J"
+
+if (byid("a62").value=="")
+byid("a62").value="F"
+if (byid("a64").value=="")
+byid("a64").value="Y"
+if (byid("a66").value=="")
+byid("a66").value="W"
+if (byid("a68").value=="")
+byid("a68").value="N"
+
+if (getCookie("a12") != "") 
+byid("a12").value=getCookie("a12");
+else
+setCookie("a12",byid("a12").value, 30);
+if (getCookie("a14") != "") 
+byid("a14").value=getCookie("a14");
+else
+setCookie("a14",byid("a14").value, 30);
+if (getCookie("a16") != "") 
+byid("a16").value=getCookie("a16");
+else
+setCookie("a16",byid("a16").value, 30);
+if (getCookie("a18") != "") 
+byid("a18").value=getCookie("a18");
+else
+setCookie("a18",byid("a18").value, 30);
+
+if (getCookie("a22") != "") 
+byid("a22").value=getCookie("a22");
+else
+setCookie("a22",byid("a22").value, 30);
+if (getCookie("a24") != "") 
+byid("a24").value=getCookie("a24");
+else
+setCookie("a24",byid("a24").value, 30);
+if (getCookie("a26") != "") 
+byid("a26").value=getCookie("a26");
+else
+setCookie("a26",byid("a26").value, 30);
+if (getCookie("a28") != "") 
+byid("a28").value=getCookie("a28");
+else
+setCookie("a28",byid("a28").value, 30);
+
+if (getCookie("a32") != "") 
+byid("a32").value=getCookie("a32");
+else
+setCookie("a32",byid("a32").value, 30);
+if (getCookie("a34") != "") 
+byid("a34").value=getCookie("a34");
+else
+setCookie("a34",byid("a34").value, 30);
+if (getCookie("a36") != "") 
+byid("a36").value=getCookie("a36");
+else
+setCookie("a36",byid("a36").value, 30);
+if (getCookie("a38") != "") 
+byid("a38").value=getCookie("a38");
+else
+setCookie("a38",byid("a38").value, 30);
+
+if (getCookie("a32") != "") 
+byid("a32").value=getCookie("a32");
+else
+setCookie("a32",byid("a32").value, 30);
+if (getCookie("a34") != "") 
+byid("a34").value=getCookie("a34");
+else
+setCookie("a34",byid("a34").value, 30);
+if (getCookie("a36") != "") 
+byid("a36").value=getCookie("a36");
+else
+setCookie("a36",byid("a36").value, 30);
+if (getCookie("a38") != "") 
+byid("a38").value=getCookie("a38");
+else
+setCookie("a38",byid("a38").value, 30);
+
+if (getCookie("a42") != "") 
+byid("a42").value=getCookie("a42");
+else
+setCookie("a42",byid("a42").value, 30);
+if (getCookie("a44") != "") 
+byid("a44").value=getCookie("a44");
+else
+setCookie("a44",byid("a44").value, 30);
+if (getCookie("a46") != "") 
+byid("a46").value=getCookie("a46");
+else
+setCookie("a46",byid("a46").value, 30);
+if (getCookie("a48") != "") 
+byid("a48").value=getCookie("a48");
+else
+setCookie("a48",byid("a48").value, 30);
+
+if (getCookie("a52") != "") 
+byid("a52").value=getCookie("a52");
+else
+setCookie("a52",byid("a52").value, 30);
+if (getCookie("a54") != "") 
+byid("a54").value=getCookie("a54");
+else
+setCookie("a54",byid("a54").value, 30);
+if (getCookie("a56") != "") 
+byid("a56").value=getCookie("a56");
+else
+setCookie("a56",byid("a56").value, 30);
+if (getCookie("a58") != "") 
+byid("a58").value=getCookie("a58");
+else
+setCookie("a58",byid("a58").value, 30);
+
+if (getCookie("a62") != "") 
+byid("a62").value=getCookie("a62");
+else
+setCookie("a62",byid("a62").value, 30);
+if (getCookie("a64") != "") 
+byid("a64").value=getCookie("a64");
+else
+setCookie("a64",byid("a64").value, 30);
+if (getCookie("a66") != "") 
+byid("a66").value=getCookie("a66");
+else
+setCookie("a66",byid("a66").value, 30);
+if (getCookie("a68") != "") 
+byid("a68").value=getCookie("a68");
+else
+setCookie("a68",byid("a68").value, 30);
+}
+ 
+function byid(id)
+{
+return document.getElementById(id);
+}
+<!--避免下面用document……麻烦可以简便调用-->
+function getsum()
+{
+setCookie("a12", byid("a12").value, 30);
+setCookie("a14", byid("a14").value, 30);
+setCookie("a16", byid("a16").value, 30);
+setCookie("a18", byid("a18").value, 30);
+setCookie("a22", byid("a22").value, 30);
+setCookie("a24", byid("a24").value, 30);
+setCookie("a26", byid("a26").value, 30);
+setCookie("a28", byid("a28").value, 30);
+setCookie("a32", byid("a32").value, 30);
+setCookie("a34", byid("a34").value, 30);
+setCookie("a36", byid("a36").value, 30);
+setCookie("a38", byid("a38").value, 30);
+setCookie("a42", byid("a42").value, 30);
+setCookie("a44", byid("a44").value, 30);
+setCookie("a46", byid("a46").value, 30);
+setCookie("a48", byid("a48").value, 30);
+setCookie("a52", byid("a52").value, 30);
+setCookie("a54", byid("a54").value, 30);
+setCookie("a56", byid("a56").value, 30);
+setCookie("a58", byid("a58").value, 30);
+setCookie("a62", byid("a62").value, 30);
+setCookie("a64", byid("a64").value, 30);
+setCookie("a66", byid("a66").value, 30);
+setCookie("a68", byid("a68").value, 30);
+}	
+</script>
+
+<body onload="checkCookie()"></body>
 </html>

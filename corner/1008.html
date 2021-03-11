@@ -165,7 +165,7 @@ rt
  <col class=xl1 width=378 style='mso-width-source:userset;mso-width-alt:
  12096;width:284pt'>
  <tr height=48 style='mso-height-source:userset;height:36.0pt'>
-  <td height=48 class=xl3 width=53 style='height:36.0pt;width:40pt'>JAD</td>
+  <td height=48 class=xl3 width=53 style='height:36.0pt;width:40pt'><output id="JAD" height=48 class=xl3 width=53 style='height:36.0pt;width:40pt' onkeyup="checkCookie('JAD')"></td>
   <td class=xl4 width=378 style='border-left:none;width:284pt'>R' U' D' R'
   D R U' R' D' R D U2 R</td>
   <td class=xl4 width=53 style='border-left:none;width:40pt'>JBD</td>
@@ -3872,12 +3872,81 @@ rt
  <![endif]>
 </table>
 
+<body onload="checkCookie('JAD')">
 </div>
 
 
 <!----------------------------->
 <!--“从 EXCEL 发布网页”向导结束-->
 <!----------------------------->
-</body>
+<script type="text/javascript">
+function setCookie(cname,cvalue,exdays) {
+  var d = new Date();
+  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  var expires = "expires=" + d.toGMTString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
 
+function getCookie(cname) {
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for(var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+
+function checkCookie(str) {
+var res1 = str.slice(1,1);
+var res2 = str.slice(2,2);
+var res3 = str.slice(3,3);
+var out1=""
+var out2=""
+var out3=""
+var origincode =["D","G","A","J","W","X","O","R","E","C","Q","M","K","I","Z","S","B","L","N","Y","H","F","T","P"];
+var array =["a11","a13","a17","a19","a21","a23","a27","a29","a31","a33","a37","a39","a41","a43","a47","a49","a51","a53","a57","a59","a61","a63","a67","a69"];
+var len = array.length;
+for (i=0 ; i < len; i++) { 
+     if (byid(array[i]).value=="")
+          byid(array[i]).value=origincode[i];
+     if (getCookie(array[i]) != "") 
+          byid(array[i]).value=getCookie(array[i]);
+     else
+          setCookie(array[i],byid(array[i]).value, 30);
+     if (res1==origincode[i])
+         out1=out1+byid(array[i]).value;
+     if (res2==origincode[i])
+         out2=out2+byid(array[i]).value;
+     if (res3==origincode[i])
+         out3=out3+byid(array[i]).value;
+}
+return out1.concat(" ",out2.concat(" ",out3));;
+}
+ 
+function byid(id)
+{
+return document.getElementById(id);
+}
+<!--避免下面用document……麻烦可以简便调用-->
+function getsum()
+{
+var array =["a11","a13","a17","a19","a21","a23","a27","a29","a31","a33","a37","a39","a41","a43","a47","a49","a51","a53","a57","a59","a61","a63","a67","a69"];
+var len = array.length;
+for (i=0 ; i < len; i++) { 
+     setCookie(array[i], byid(array[i]).value, 30);
+}
+}	
+
+function wu()
+{
+}	
+</script>
+</body>
 </html>

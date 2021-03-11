@@ -3924,8 +3924,8 @@ for (i=0 ; i < len; i++) {
      if (res3==origincode[i])
          out3=out3+byid(array[i]).value;
 }
-return out1.concat(" ",out2.concat(" ",out3));
 byid(str).value=out1.concat(" ",out2.concat(" ",out3));
+return out1.concat(" ",out2.concat(" ",out3));
 }
  
 function byid(id)

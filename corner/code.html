@@ -197,7 +197,7 @@ rt
 </style>
 </head>
 
-<body onload="checkCookie()">
+<body>
 <!--[if !excel]>　　<![endif]-->
 <!--下列信息由 Microsoft Excel 的发布为网页向导生成。-->
 <!--如果同一条目从 Excel 中重新发布，则所有位于 DIV 标记之间的信息均将被替换。-->
@@ -530,7 +530,7 @@ function getCookie(cname) {
   return "";
 }
 
-function checkCookie() {
+window.onload=function checkCookie() {
 var origincode =["D","G","A","J","W","X","O","R","E","C","Q","M","K","I","Z","S","B","L","N","Y","H","F","T","P"];
 var array =["a11","a13","a17","a19","a21","a23","a27","a29","a31","a33","a37","a39","a41","a43","a47","a49","a51","a53","a57","a59","a61","a63","a67","a69"];
 var len = array.length;

@@ -165,7 +165,7 @@ rt
  <col class=xl1 width=378 style='mso-width-source:userset;mso-width-alt:
  12096;width:284pt'>
  <tr height=48 style='mso-height-source:userset;height:36.0pt'>
-  <td height=48 class=xl3 width=53 style='height:36.0pt;width:40pt'><output id="JAD" height=48 class=xl3 width=53 style='height:36.0pt;width:40pt'></td>
+  <td height=48 class=xl3 width=53 style='height:36.0pt;width:40pt'><output id="JAD" class=xl3 width=53 style='border-left:none;border-right:none;border-top:none;border-bottom:none;width:40pt'></td>
   <td class=xl4 width=378 style='border-left:none;width:284pt'>R' U' D' R'
   D R U' R' D' R D U2 R</td>
   <td class=xl4 width=53 style='border-left:none;width:40pt'>JBD</td>
@@ -3924,8 +3924,8 @@ for (i=0 ; i < len; i++) {
      if (res3==origincode[i])
          out3=thiscorner;
 }
-byid(str).value=out1.concat(" ",out2.concat(" ",out3));
-return out1.concat(" ",out2.concat(" ",out3));
+byid(str).value=out1.concat("",out2.concat("",out3));
+return out1.concat("",out2.concat("",out3));
 }
  
 function byid(id)

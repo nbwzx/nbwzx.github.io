@@ -3223,7 +3223,7 @@ var str=["JAD","JAE","JAF","JAG","JAH","JAI","JAW","JAM","JAN","JAO","JAP","JAQ"
 var arrayout=[];
 for (i=0 ; i < len; i++) { 
      if (getCookie(array[i]) != "") 
-          arrayout[i]=arraycookie[i];
+          arrayout[i]=getCookie(array[i]);
      else
           arrayout[i]=origincode[i];
 }

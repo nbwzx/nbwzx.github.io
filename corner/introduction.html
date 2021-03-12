@@ -220,9 +220,8 @@ rt
  </tr>
  <tr height=66 style='mso-height-source:userset;height:49.5pt'>
   <td height=66 class=xl2 style='height:49.5pt;border-top:none'>公式查询：（请在右边单元格输入你要查询的公式）</td>
-  <td class=xl3 style='border-top:none;border-left:none'>WYF</td>
-  <td class=xl3 style='border-top:none;border-left:none'>R U' R2 D R U'
-  R' D' R U R U R'</td>
+  <td class=xl3 style='border-top:none;border-left:none'><input type="text"  placeholder="" id="cornerinput" onkeyup="getcorner()" type="text" maxlength="3" class="xl3" style="width: 100%; height: 100%;border-bottom-width: 0pt;border-right-width: 0pt;border-top-width: 0px;border-left-width: 0px;">  </td>
+  <td class=xl3 style='border-top:none;border-left:none'><output type="text" id="corneroutput"  style="width: 100%; height: 100%;border-bottom-width: 0pt;border-right-width: 0pt;border-top-width: 0px;border-left-width: 0px;"></td>
  </tr>
  <![if supportMisalignedColumns]>
  <tr height=0 style='display:none'>
@@ -239,6 +238,57 @@ rt
 <!----------------------------->
 <!--“从 EXCEL 发布网页”向导结束-->
 <!----------------------------->
+
+<script type="text/javascript">
+function byid(id)
+{
+return document.getElementById(id);
+}
+<!--避免下面用document……麻烦可以简便调用-->
+function getcorner()
+{
+var corneradd=byid("cornerinput").value;
+switch (corneradd)
+{
+case "GAC":x="R U R S2 R' U' R S2 R2";break;
+case "MJW":x="M2 u R E R' S R' S' R U' M2";break;
+default: x="NaN";
+}
+byid("corneroutput").value=(x);
+}	
+
+
+function setCookie(cname,cvalue,exdays) {
+  var d = new Date();
+  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  var expires = "expires=" + d.toGMTString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for(var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+
+function checkCookie() {
+  var user=getCookie("username");
+  if (user != "") {
+    byid("cornerinput").value=user;
+    getcorner(2);
+  }
+}
+</script>
 </body>
 
 </html>

@@ -1,7 +1,7 @@
 from openpyxl import load_workbook
 import win32ui
-
-def make_1008():
+def read_excel():
+    global filename
     wrong = 0
     print("请打开要检验的噩梦版Excel文件")
     dlg = win32ui.CreateFileDialog(1, None, None, 0, "Excel files|*.xls*")  # 表示打开文件对话框
@@ -9,6 +9,7 @@ def make_1008():
     dlg.DoModal()
     filename = dlg.GetPathName()  # 获取选择的文件名称
 
+def make_1008():
     workbook = load_workbook(filename,data_only=True)
     if "1008" in filename:
         sheet1 = workbook["1008"]
@@ -362,12 +363,6 @@ function wu()
 
 
 def make_each(sheetname):
-    wrong = 0
-    print("请打开要检验的噩梦版Excel文件")
-    dlg = win32ui.CreateFileDialog(1, None, None, 0, "Excel files|*.xls*")  # 表示打开文件对话框
-    dlg.SetOFNInitialDir('D:/')  # 设置打开文件对话框中的初始显示目录
-    dlg.DoModal()
-    filename = dlg.GetPathName()  # 获取选择的文件名称
 
     workbook = load_workbook(filename, data_only=True)
     if "1008" in filename:

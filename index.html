@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zixing Wang</title>
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!--
+    - #MAIN
+  -->
+  <main>
+    <!--
+      - #SIDEBAR
+    -->
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="./assets/images/profile.png" alt="Zixing Wang" width="55">
+        </figure>
+        <div class="info-content">
+          <h1 class="name" title="Zixing Wang">Zixing Wang</h1>
+          <!-- <p class="title">Web developer</p> -->
+        </div>
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:nbwzx@126.com" class="contact-link">nbwzx@126.com</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+              <a href="tel:+8618268568435" class="contact-link">+86 182-6856-8435</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+              <time datetime="200-06-27">June 27, 2000</time>
+            </div>
+          </li>
+          <li class="contact-item" style="text-align:center">
+            <form method="get" action="./assets/files/cv.pdf" target="_blank">
+              <button class="form-btn" type="submit">Download CV</button>
+            </form>
+          </li>
+        </ul>
+        <div class="separator"></div>
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://github.com/nbwzx" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://www.facebook.com/zixing.wang.921" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://twitter.com/nbwzx123" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/nbwzx" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <!--
+      - #main-content
+    -->
+    <div class="main-content">
+      <!--
+        - #NAVBAR
+      -->
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Comment</button>
+          </li>
+        </ul>
+      </nav>
+      <!--
+        - #ABOUT
+      -->
+      <article class="about  active" data-page="about">
+        <h2 class="h2 article-title">About me</h2>
+        <section class="about-text">
+          <p>
+            Hi, there 👋.
+          </p>
+          <p>
+            I'm <strong>Zixing Wang</strong> from China, a graduate student at the National University of Singapore with
+            major in statistics. Broadly, I am interested in statistical analysis, modeling, prediction, and machine
+            learning.
+          </p>
+        </section>
+        <!--
+          - service
+        -->
+        <section class="service">
+          <h2 class="h2 service-title">What i'm doing</h2>
+          <ul class="service-list">
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-think.svg" alt="think icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">math</h4>
+                <p class="service-item-text">
+                  I always believe that real math is real fun.
+                </p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-book.svg" alt="book icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">read</h4>
+                <p class="service-item-text">
+                  I like reading books, especially detective fictions.
+                </p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-cube.svg
+                " alt="cube icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Rubik's cube</h4>
+                <p class="service-item-text">
+                  I play Rubik's cube and other puzzles.
+                </p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+                <p class="service-item-text">
+                  I design and develop high-quality websites.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <h2 class="h2 article-title">Research statement</h2>
+        <section class="about-text">
+          <p>
+            My interest in statistics grew as my studies progressed, and I found that it was an intriguing area. It is
+            possible to examine the data we collect utilizing the power of statistics. I am excited about statistics by
+            a fascination with randomness, and it brings me to interact with researchers in many areas.
+          </p>
+        </section>
+        <h2 class="h2 article-title">Future direction</h2>
+        <section class="about-text">
+          <p>
+            I want to engage in statistical analysis, modeling and prediction, to learn and to discover with curiosity.
+          </p>
+        </section>
+      </article>
+      <!--
+        - #RESUME
+      -->
+      <article class="resume" data-page="resume">
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="school-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Education</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">National University of Singapore(NUS)</h4>
+              <span>Aug. 2022 - Present</span>
+              <p class="timeline-text">
+                M.S. in Statistics
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Shanghai Jiao Tong University (SJTU)</h4>
+              <span>Sep. 2018 ‑ Jun. 2022</span>
+              <p class="timeline-text">
+                B.S. in Mathematics and Applied Mathematics (Wu Wenjun Honour Program)
+              </p>
+              <i class="timeline-major">
+                <strong style="color:rgb(196, 95, 95)">Excellent graduates</strong> of Shanghai Jiao Tong University
+              </i>
+            </li>
+          </ol>
+        </section>
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+            <h3 class="h3">My Skills</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <p class="h4 timeline-item-title">
+                <strong style="color:DodgerBlue">Programming: </strong> Python, C++, Mysql, VB, VBA, R, Mathematica,
+                Matlab
+              </p>
+            </li>
+            <li class="timeline-item">
+              <p class="h4 timeline-item-title">
+                <strong style="color:DodgerBlue">Working Software: </strong> Latex, Markdown, Git, Excel, PowerPoint,
+                Word
+              </p>
+            </li>
+            <li class="timeline-item">
+              <p class="h4 timeline-item-title">
+                <strong style="color:DodgerBlue">Web Design: </strong> JavaScript, HTML, CSS
+              </p>
+            </li>
+            <li class="timeline-item">
+              <p class="h4 timeline-item-title">
+                <strong style="color:DodgerBlue">Languages: </strong> Chinese, English
+              </p>
+            </li>
+          </ol>
+        </section>
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Research</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Khovanov homology and knot concordance</h4>
+              <span>Dec. 2021 ‑ Jun. 2022</span>
+              <p>
+                This paper mainly studies the relations between Khovanov homology and knot concordance. Based on a
+                variant of the Khovanov homology
+                developed by Lee, we can construct the Rasmussen invariant. It provides a lower bound for the slice
+                genus of a knot. For alternating knots, it
+                equals the signature. As an application, we introduce Piccirillo's elegant proof, which shows that the
+                Conway knot is not slice.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">A Generalized Determinant of Matrices and Applications</h4>
+              <span>Jun. 2019 ‑ Dec. 2020</span>
+              <p>
+                • We gave a generalized definition of the determinant of matrices, which is compatible with the usual
+                determinant for square matrices and keeps
+                many important properties, such as being an alternating multilinear function, keeping multiplication
+                formula and partly keeping the Cauchy‑Binet's formula. As applications of the new theory, the
+                generalized Cramer's rule and the
+                generalized
+                oriented volume are obtained.
+              </p>
+              <p>
+                • This program was rated as outstanding program and supported by NSFC and NSF of Shanghai Municipal.
+                Our
+                team has already written a paper
+                'A Generalized Determinant of Matrices and Applications' and has submitted it to 'Algebra
+                Colloquium'.
+              </p>
+            </li>
+          </ol>
+        </section>
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="construct-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Project</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">BldDb</h4>
+              <span>Jun. 2022 ‑ Present</span>
+              <p>
+                BldDb is a 3x3x3 Rubik's cube blindfolded algorithms database. This website includes thousands of
+                algorithms including corner twist, edge flip, 3‑style corner (all buffers), 3‑style edge (all buffers).
+                It supports simplified Chinese and English, and is compatible with mobile phones, PCs and tablets. The
+                website provides many options for each case, so the users can select algorithm based on their own
+                preference.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Commutator</h4>
+              <span>Mar. 2022 ‑ Present</span>
+              <p>
+                Let 𝐺 be any group. If 𝑎, 𝑏 ∈ 𝐺, then the commutator of 𝑎 and 𝑏 is the element [𝑎, 𝑏] =
+                𝑎𝑏𝑎<sup>−1</sup>𝑏<sup>−1</sup>. This project is aimed at decomposing algorithms in commutator
+                notation. For example, it decomposes
+                𝑎𝑏<sup>4</sup>𝑐𝑏𝑎<sup>−1</sup>𝑏<sup>−2</sup>𝑐<sup>−1</sup>𝑏<sup>−3</sup> to [𝑎𝑏,
+                𝑏<sup>3</sup>𝑐𝑏<sup>2</sup>
+                ].
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Customized Poker</h4>
+              <span>Feb. 2021 ‑ May. 2022</span>
+              <p>
+                You can design your own photo playing cards using 'Customized Poker' for print. For example, it can be
+                used for commemorating teachers or students by making customized poker cards.
+              </p>
+            </li>
+          </ol>
+        </section>
+      </article>
+      <!--
+        - #PORTFOLIO
+      -->
+      <article class="portfolio" data-page="portfolio">
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+        <section class="projects">
+          <ul class="filter-list">
+            <li class="filter-item">
+              <button data-filter-btn class="active">All</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Research</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Project</button>
+            </li>
+          </ul>
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <div class="select-value" data-selecct-value>Select category</div>
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+            </button>
+            <ul class="select-list">
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Research</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Project</button>
+              </li>
+            </ul>
+          </div>
+          <ul class="project-list">
+            <li class="project-item  active" data-filter-item data-category="project">
+              <a href="https://blddb.net" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/blddb.png" alt="blddb" loading="lazy">
+                </figure>
+                <h3 class="project-title">BldDb</h3>
+                <p class="project-category">Project</p>
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="research">
+              <figure class="project-img">
+                <img src="./assets/images/knot.png" alt="knot" loading="lazy">
+              </figure>
+              <h3 class="project-title">Khovanov homology and knot concordance</h3>
+              <p class="project-category">Research</p>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="research">
+              <a href="https://arxiv.org/pdf/2111.14840.pdf" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/determinant.png" alt="determinant" loading="lazy">
+                </figure>
+                <h3 class="project-title">A Generalized Determinant of Matrices and Applications</h3>
+                <p class="project-category">Research</p>
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="research">
+              <a href="./assets/files/A Short Review of 'EIGENVECTORS FROM EIGENVALUES'.pdf" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/eigenvalue.png" alt="eigenvalue" loading="lazy">
+                </figure>
+                <h3 class="project-title">A Short Review of 'EIGENVECTORS FROM EIGENVALUES'</h3>
+                <p class="project-category">Research</p>
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="project">
+              <a href="https://zixingwang.cn/commutator" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/commutator.png" alt="commutator" loading="lazy">
+                </figure>
+                <h3 class="project-title">Commutator</h3>
+                <p class="project-category">Project</p>
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="research">
+              <a href="./assets/files/Methods of Primality Testing.pdf" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/prime.png" alt="prime" loading="lazy">
+                </figure>
+                <h3 class="project-title">Methods of Primality Testing</h3>
+                <p class="project-category">Research</p>
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="project">
+              <a href="https://github.com/nbwzx/CubeSudoku" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/sudoku.png" alt="sudoku" loading="lazy">
+                </figure>
+                <h3 class="project-title">Cube Sudoku</h3>
+                <p class="project-category">Project</p>
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="research">
+              <a href="./assets/files/Birkhoff's Problem with All Proofs.pdf" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/birkhoff.png" alt="birkhoff" loading="lazy">
+                </figure>
+                <h3 class="project-title">Birkhoff's Problem with All Proofs</h3>
+                <p class="project-category">Research</p>
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="project">
+              <a href="https://github.com/nbwzx/Customized-Poker" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/poker.png" alt="poker" loading="lazy">
+                </figure>
+                <h3 class="project-title">Customed Poker</h3>
+                <p class="project-category">Project</p>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </article>
+      <!--
+        - #COMMENT
+      -->
+      <article class="comment" data-page="comment">
+        <header>
+          <h2 class="h2 article-title">Comment</h2>
+        </header>
+        <p>
+          Feel free to share your thoughts and comments on this website.
+        </p>
+        <br />
+        <script src="https://utteranc.es/client.js" repo="nbwzx/nbwzx.github.io" issue-term="title" theme="github-light"
+          crossorigin="anonymous" async>
+        </script>
+      </article>
+    </div>
+  </main>
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

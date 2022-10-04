@@ -383,7 +383,7 @@ main {
   top: -15px;
   right: -15px;
   border-radius: 15px 15px 15px 15px;
-  font-size: 13px;
+  font-size: 24px;
   border: 1px solid var(--jet);
   color: var(--orange-yellow-crayola);
   background: var(--border-gradient-onyx);
@@ -448,14 +448,14 @@ main {
 
 .contact-title {
   color: var(--light-gray-70);
-  font-size: var(--fs-8);
+  font-size: var(--fs-7);
   text-transform: uppercase;
   margin-bottom: 2px;
 }
 
 .contact-info :is(.contact-link, time, address) {
   color: var(--white-2);
-  font-size: var(--fs-7);
+  font-size: var(--fs-4);
 }
 
 .contact-info address {
@@ -1336,7 +1336,7 @@ textarea.form-input::-webkit-resizer {
   gap: 10px;
   padding: 13px 20px;
   border-radius: 14px;
-  font-size: var(--fs-6);
+  font-size: var(--fs-4);
   text-transform: capitalize;
   box-shadow: var(--shadow-3);
   z-index: 1;

@@ -381,10 +381,10 @@ main {
 .info_more-btn {
   position: absolute;
   top: -15px;
-  right: -15px;
+  right: -10px;
   border-radius: 15px 15px 15px 15px;
   font-size: 24px;
-  border: 1px solid var(--jet);
+  border: 2px solid var(--jet);
   color: var(--orange-yellow-crayola);
   background: var(--border-gradient-onyx);
   padding: 10px;
